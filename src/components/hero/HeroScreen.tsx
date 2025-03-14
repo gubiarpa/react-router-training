@@ -5,7 +5,7 @@ export const HeroScreen = () => {
 	const { heroId } = useParams();
 	const navigate = useNavigate();
 
-	const hero = getHeroById(heroId);
+	const hero = useMemo(() => getHeroById(heroId), [heroId]);
 
 	const handleReturn = () => {
 		if (navigate) navigate(-1);
