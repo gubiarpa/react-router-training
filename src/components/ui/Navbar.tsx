@@ -1,10 +1,7 @@
 import { Link, NavLink } from 'react-router-dom';
 
 export const Navbar = () => {
-	const handleLogout = () => {
-		// TODO: Por hacer
-		console.log('Logout');
-	};
+	const handleLogout = () => {};
 
 	return (
 		<nav className='navbar navbar-expand-sm navbar-dark bg-dark'>
